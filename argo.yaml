@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: basic-nextjs
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/JomNum-Tech/Nextjs-Kubernetes-Deployment"
+    targetRevision: HEAD
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
