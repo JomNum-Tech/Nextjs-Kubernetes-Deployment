@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://github.com/JomNum-Tech/Nextjs-Kubernetes-Deployment"
+    repoURL: "https://github.com/JomNum-Tech/nextjs-kubernetes-deployment"
     targetRevision: HEAD
     path: manifest
   destination:
