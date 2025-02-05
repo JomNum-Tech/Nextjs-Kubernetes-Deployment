@@ -15,7 +15,11 @@ This repository contains Kubernetes configuration files for deploying and managi
 ## Repository Structure
 ```
 .
-└── deployment.yaml
+├── README.md
+├── argo.yaml
+└── manifest
+    ├── deploy-basic-nextjs.yaml
+    └── deployment.yaml
 ```
 
 The `deployment.yaml` file is the main configuration file that defines how your application should be deployed in the Kubernetes cluster. It includes specifications for:
