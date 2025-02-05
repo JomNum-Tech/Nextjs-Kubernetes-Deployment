@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: "https://github.com/JomNum-Tech/Nextjs-Kubernetes-Deployment"
     targetRevision: HEAD
-    path: k8s
+    path: manifest
   destination:
     server: https://kubernetes.default.svc
     namespace: default
